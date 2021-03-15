@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>MathFuncs</RootNamespace>
     <AssemblyName>MathFuncs</AssemblyName>
-    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v10.0</TargetFrameworkVersion>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
@@ -23,7 +23,8 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
-    <JavaMaximumHeapSize></JavaMaximumHeapSize>
+    <JavaMaximumHeapSize>
+    </JavaMaximumHeapSize>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -35,7 +36,8 @@
     <WarningLevel>4</WarningLevel>
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
-    <JavaMaximumHeapSize></JavaMaximumHeapSize>
+    <JavaMaximumHeapSize>
+    </JavaMaximumHeapSize>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -53,13 +55,7 @@
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="libs\" />
-    <Folder Include="libs\arm64-v8a\" />
-    <Folder Include="libs\armeabi-v7a\" />
-    <Folder Include="libs\x86_64\" />
-    <Folder Include="libs\x86\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedNativeLibrary Include="libs\arm64-v8a\libMathFuncs.so" />
     <EmbeddedNativeLibrary Include="libs\armeabi-v7a\libMathFuncs.so" />

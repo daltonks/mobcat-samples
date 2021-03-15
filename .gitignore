@@ -343,3 +343,7 @@ UserInterfaceState\.xcuserstate
 # Config
 config/
 
+
+cpp_with_xamarin/Sample/Consumer/MathFuncsApp/MathFuncsApp.Android/Resources/Resource.designer.cs
+
+cpp_with_xamarin/Sample/Wrapper/MathFuncs/MathFuncs.Android/Resources/Resource.designer.cs
