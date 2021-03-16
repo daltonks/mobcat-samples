@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -55,13 +55,7 @@
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
   </ItemGroup>
-  <ItemGroup> 
-    <Folder Include="libs\" /> 
-    <Folder Include="libs\arm64-v8a\" /> 
-    <Folder Include="libs\armeabi-v7a\" /> 
-    <Folder Include="libs\x86_64\" /> 
-    <Folder Include="libs\x86\" /> 
-  </ItemGroup> 
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedNativeLibrary Include="libs\arm64-v8a\libMathFuncs.so" />
     <EmbeddedNativeLibrary Include="libs\armeabi-v7a\libMathFuncs.so" />

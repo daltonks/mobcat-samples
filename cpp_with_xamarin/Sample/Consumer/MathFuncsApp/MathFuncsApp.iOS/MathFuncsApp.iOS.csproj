@@ -149,7 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MathFuncs">
-      <Version>1.0.1</Version>
+      <Version>1.0.3</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="4.7.0.1351" />
     <PackageReference Include="Com.Airbnb.iOS.Lottie">

@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>MathFuncs</id>
-    <version>1.1</version>
+    <version>1.0.0</version>
     <authors>Microsoft Mobile Customer Advisory Team</authors>
     <description>Sample C++ Wrapper Library</description>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
