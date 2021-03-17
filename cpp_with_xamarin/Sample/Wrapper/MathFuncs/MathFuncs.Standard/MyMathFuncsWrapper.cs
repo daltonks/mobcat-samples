@@ -7,14 +7,9 @@ namespace MathFuncs
     {
 #if Android
         const string DllName = "libMathFuncs.so";
-#else
+#elif __IOS__
         const string DllName = "__Internal";
 #endif
-
-        #if WINDOWS_UWP
-
-        #endif
-
         [DllImport(DllName, EntryPoint = "CreateMyMathFuncsClass")]
         internal static extern MyMathFuncsSafeHandle CreateMyMathFuncs();
 

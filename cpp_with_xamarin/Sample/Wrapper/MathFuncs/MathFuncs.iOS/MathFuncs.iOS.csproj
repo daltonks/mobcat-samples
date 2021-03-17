@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -25,7 +25,8 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release</OutputPath>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>
+    </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
@@ -51,6 +52,11 @@
       <IsCxx>True</IsCxx>
     </NativeReference>
   </ItemGroup>
-  <Import Project="..\MathFuncs.Shared\MathFuncs.Shared.projitems" Label="Shared" Condition="Exists('..\MathFuncs.Shared\MathFuncs.Shared.projitems')" />
+  <ItemGroup>
+    <ProjectReference Include="..\MathFuncs.Standard\MathFuncs.Standard.csproj">
+      <Project>{e1f3f1e1-e014-4883-88ca-bd18a54b1235}</Project>
+      <Name>MathFuncs.Standard</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
 </Project>
